@@ -1,23 +1,24 @@
-%h1 Listing categoria
+%h1 Listado de categorías
 
 %table
   %thead
     %tr
       %th Nombre
-      %th Descripcion
+      %th Descripción
       %th
       %th
       %th
 
   %tbody
-    - @categoria.each do |categorium|
+    - @categorias.each do |categoria|
       %tr
-        %td= categorium.nombre
-        %td= categorium.descripcion
-        %td= link_to 'Show', categorium
-        %td= link_to 'Edit', edit_categorium_path(categorium)
-        %td= link_to 'Destroy', categorium, :method => :delete, :data => { :confirm => 'Are you sure?' }
+        %td= categoria.nombre
+        %td= categoria.descripcion
+        %td= link_to 'Mostrar', categoria_path(categoria)
+        %td= link_to 'Editar', edit_categoria_path(categoria)
+        %td= link_to 'Eliminar', categoria, method: :delete, data: { confirm: '¿Estás seguro?' }
 
 %br
 
-= link_to 'New Categorium', new_categorium_path
+= link_to 'Nueva categoría', new_categoria_path
+
