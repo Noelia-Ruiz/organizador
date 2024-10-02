@@ -37,6 +37,7 @@ gem "jbuilder"
 
 gem 'hamlit' # para sistema de templates
 gem 'simple_form' # para optimizar la creación de formularios
+gem 'annotate' # para visualizar los atributos en los modelos
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem "tzinfo-data", platforms: %i[ mswin mswin64 mingw x64_mingw jruby ]

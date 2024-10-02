@@ -1,0 +1,18 @@
+%p#notice= notice
+
+%p
+  %b Nombre:
+  = @tarea.nombre
+%p
+  %b Descripcion:
+  = @tarea.descripcion
+%p
+  %b Fecha vencimiento:
+  = @tarea.fecha_vencimiento
+%p
+  %b Categoria:
+  = @tarea.categoria
+
+= link_to 'Edit', edit_tarea_path(@tarea)
+\|
+= link_to 'Back', tareas_path
